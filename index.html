@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sapataria Afetiva</title>
+  <link rel="stylesheet" href="style.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="barra">
+  <div class="logo">
+    <i class="fa-solid fa-shoe-prints"></i> Manu Sapataria Afetiva
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menu" type="button">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav id="nav" role="navigation">
+    <a href="#inicio" onclick="closeMenu()"><i class="fa-solid fa-house"></i> Início</a>
+    <a href="#sobre" onclick="closeMenu()"><i class="fa-solid fa-book-open"></i> Sobre</a>
+    <a href="#servicos" onclick="closeMenu()"><i class="fa-solid fa-screwdriver-wrench"></i> Serviços</a>
+    <a href="#contato" onclick="closeMenu()"><i class="fa-solid fa-phone"></i> Contato</a>
+  </nav>
+  <button class="toggle-theme" aria-label="Alternar tema" type="button">
+    <i class="fa-solid fa-moon"></i> / <i class="fa-solid fa-sun"></i>
+  </button>
+</header>
+
+  <main>
+    <section id="inicio" class="hero-inicio">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>
+      <i class="fa-solid fa-shoe-prints"></i> Manu Sapataria Afetiva
+    </h1>
+    <p>
+      Tradição, cuidado e afeto em cada detalhe.<br>
+      Consertos, restaurações e histórias que caminham com você.
+    </p>
+    <a href="#historia" class="hero-btn">
+      Conheça nossa história <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </div>
+
+</section>
+<section class="apresentacao-manu">
+  <div class="apresentacao-conteudo">
+    <div class="apresentacao-texto">
+      <h1 id="historia">Quem é Manoel?</h1>
+      <p>
+        Para apresentar nosso cliente, é preciso voltar no tempo... 
+      </p>
+      <p>
+        Na década de 1960, em Minas Gerais, um menino de 12 anos trocou as brincadeiras pelo ofício do couro. Sem curso, sem máquinas, aprendeu sozinho — observando, errando, recomeçando — até dominar a arte de criar e restaurar sapatos, bolsas, carteiras, cintos e mochilas.
+      </p>
+    
+      <p>
+       Nos anos 1970, mudou-se para São Paulo em busca de novas oportunidades. No quintal da casa que construiu, nasceu a pequena oficina que, com o tempo, deu origem à Manu Sapataria Afetiva.
+      </p>
+
+      <p>Hoje, aos 75 anos, Senhor Manuel segue trabalhando com o mesmo cuidado e dedicação. Cada peça passa por suas mãos com atenção, respeito e o conhecimento de uma vida inteira.</p>
+    </div>
+    <div class="apresentacao-foto-quadro">
+      <img src="Manuel.png" alt="Seu Manoel - Fundador" class="apresentacao-foto">
+    </div>
+  </div>
+</section>
+
+    <section class="sobre" >
+      <div class="sobre1 destaque-historia">
+  <h2>M.V.V</h2>
+ <p>
+
+M.V.V significa Missão, Visão e Valores. É um conjunto de princípios que orienta uma empresa ou organização.  
+
+ </p>
+
+</div>
+ </section>
+<section class="mvv-linha">
+  <div class="mvv-box">
+    <div class="mvv-bg">
+      <span class="mvv-letra">M</span><span class="mvv-titulo">issão</span>
+      <p class="mvv-texto">
+        Nossa missão é entregar de produtos de qualidade, com preço justo e acessível, além de conforto e bem-estar dos nossos clientes.
+      </p>
+      <div class="mvv-quadrados mvv-quadrados-top"></div>
+      <div class="mvv-quadrados mvv-quadrados-bottom"></div>
+    </div>
+  </div>
+  <div class="mvv-box">
+    <div class="mvv-bg">
+      <span class="mvv-letra">V</span><span class="mvv-titulo">isão</span>
+      <p class="mvv-texto">
+        Ser reconhecido pelo talento e qualidade dos produtos em cada detalhe, não só de própria criação, mas também dos consertos e manutenções.
+      </p>
+      <div class="mvv-quadrados mvv-quadrados-top"></div>
+      <div class="mvv-quadrados mvv-quadrados-bottom"></div>
+    </div>
+  </div>
+  <div class="mvv-box">
+    <div class="mvv-bg">
+      <span class="mvv-letra">V</span><span class="mvv-titulo">alores</span>
+      <p class="mvv-texto">
+        Entrega de qualidade desde a confecção ou manutenções dos calçados até a entrega deles.
+      </p>
+      <div class="mvv-quadrados mvv-quadrados-top"></div>
+      <div class="mvv-quadrados mvv-quadrados-bottom"></div>
+    </div>
+  </div>
+</section>
+ 
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco pelos canais disponíveis.</p>
+    </section>
+
+    <section class="feedback-section">
+      <div class="feedback-container">
+        <h2>Deixe seu Feedback</h2>
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label>Avaliação</label>
+          <div class="stars" aria-label="Avaliação por estrelas">
+            <span class="star" data-value="1" tabindex="0">&#9733;</span>
+            <span class="star" data-value="2" tabindex="0">&#9733;</span>
+            <span class="star" data-value="3" tabindex="0">&#9733;</span>
+            <span class="star" data-value="4" tabindex="0">&#9733;</span>
+            <span class="star" data-value="5" tabindex="0">&#9733;</span>
+          </div>
+
+          <label class="mensagem" for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Escreva seu feedback aqui..." required></textarea>
+
+          <button class="submit" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
