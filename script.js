@@ -48,4 +48,25 @@ toggleThemeBtn?.addEventListener('click', () => {
       msg.style.display = "block";
       form.reset(); // limpa o formulário
     });
-    
+    // ...demais scripts do site...
+
+// Animar FOOTER ao aparecer na tela usando IntersectionObserver
+document.addEventListener("DOMContentLoaded", function () {
+  const footer = document.querySelector('.site-footer');
+  if (footer) {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            footer.classList.add('visible');
+            observer.disconnect(); // só anima uma vez
+          }
+        });
+      },
+      { threshold: 0.18 }
+    );
+    observer.observe(footer);
+  }
+});
+
+// ...restante do script já existente...
